@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Global Styles */
+.lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.big-shoulders {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.primary-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.primary-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.primary-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.neutral-1 {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.neutral-2 {
+  color: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+}
+
+header {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 0.9375rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.container > div a:last-child {
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+}
+
+.sedans > a {
+  color: hsl(31, 77%, 52%);
+  mix-blend-mode: screen;
+}
+
+.suvs > a {
+  color: hsl(184, 100%, 22%);
+  mix-blend-mode: screen;
+}
+
+.luxury > a {
+  color: hsl(179, 100%, 13%);
+  mix-blend-mode: screen;
+}
+
+.div-padding {
+  padding: 3rem 2.9rem 3rem 2.5rem;
+}
+
+.grid {
+  display: grid;
+  justify-items: start;
+}
+
+.sedans {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  gap: 2rem;
+}
+
+.suvs {
+  gap: 2rem;
+}
+
+.luxury {
+  border-radius: 0 0 0.5rem 0.5rem;
+  gap: 2rem;
+}
+
+.container > div a:last-child:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  outline: 0.2rem solid hsl(0, 0%, 95%);
+}
+
+@media (min-width: 84rem) {
+  .container {
+    flex-direction: row;
+    margin-left: 17.5rem;
+    margin-right: 17.5rem;
+  }
+
+  .sedans {
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .luxury {
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .container > div a:last-child {
+    margin-top: 3rem;
+  }
+}
